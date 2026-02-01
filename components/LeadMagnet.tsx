@@ -20,14 +20,12 @@ const LeadMagnet: React.FC = () => {
       className="bg-yellow-500 border-y border-yellow-600 overflow-hidden"
       style={{
         paddingBlock: "var(--section-padding-block)",
-        marginTop: 0,
-        marginBottom: "var(--section-margin-block)",
       }}
     >
       <div className="container">
         <div
           className="bg-black text-white rounded-2xl sm:rounded-3xl shadow-2xl relative overflow-hidden min-w-0 w-full max-w-full"
-          style={{ padding: "clamp(1rem, 4vw, 4rem)" }}
+          style={{ padding: "clamp(1.5rem, 4vw, 4rem)" }}
         >
           {/* Texture */}
           <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.05)_50%,transparent_75%,transparent_100%)] bg-size-[20px_20px]" />
@@ -35,7 +33,7 @@ const LeadMagnet: React.FC = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-16 items-stretch lg:items-center min-w-0 w-full">
             {/* Copy */}
             <div className="min-w-0 flex flex-col">
-              <div className="inline-flex items-center gap-2 bg-yellow-500 text-black font-bold px-4 py-1.5 rounded text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit">
+              <div className="inline-flex items-center gap-1 bg-yellow-500 pr-3 text-black font-bold px-2 py-2 rounded-full text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit">
                 <ShieldCheck size={16} className="shrink-0" />
                 Top Secret Access
               </div>
@@ -85,11 +83,11 @@ const LeadMagnet: React.FC = () => {
             >
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 w-full min-w-0 max-w-full">
-                  <div className="text-center mb-8">
-                    <h3 className="font-bold text-2xl text-white uppercase tracking-tight">
+                  <div className="text-center mb-8 flex flex-col items-center gap-2">
+                    <h3 className="font-bold text-xl sm:text-2xl text-white uppercase tracking-tight">
                       Get Instant Access
                     </h3>
-                    <p className="text-sm text-gray-500 font-medium">
+                    <p className="text-xs sm:text-sm text-gray-500 font-medium">
                       Enter your details below to unlock.
                     </p>
                   </div>
@@ -104,7 +102,7 @@ const LeadMagnet: React.FC = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="you@example.com"
-                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-lg focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-gray-500 box-border"
+                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-sm focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-gray-500 box-border"
                     />
                   </div>
 
@@ -118,16 +116,16 @@ const LeadMagnet: React.FC = () => {
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       placeholder="(555) 123-4567"
-                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-lg focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-gray-500 box-border"
+                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-sm focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-gray-500 box-border"
                     />
                   </div>
 
                   <Button
                     type="submit"
                     fullWidth
-                    className="mt-4 flex items-center justify-center gap-2 text-lg"
+                    className="mt-4 flex items-center justify-center gap-2 text-sm sm:text-lg"
                   >
-                    Send Me The Blueprint <Download size={20} strokeWidth={3} />
+                    Send Me The Blueprint <Download size={24} />
                   </Button>
 
                   <div className="flex items-center justify-center gap-2 text-[10px] text-gray-600 mt-4 uppercase font-bold tracking-wider">
@@ -137,10 +135,10 @@ const LeadMagnet: React.FC = () => {
                 </form>
               ) : (
                 <div className="text-center py-16">
-                  <div className="w-20 h-20 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-yellow-500/20 text-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle size={40} />
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4 uppercase">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 uppercase">
                     You're In!
                   </h3>
                   <p className="text-gray-400 font-medium">

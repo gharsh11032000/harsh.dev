@@ -106,3 +106,9 @@ body {
     border-color: rgba(234, 179, 8, 0.6);
   }
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

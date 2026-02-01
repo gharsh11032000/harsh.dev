@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
   };
 
   const inputClass =
-    "w-full min-w-0 max-w-full bg-black border border-neutral-700 text-white rounded-xl focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 transition-all placeholder:text-gray-500 box-border";
+    "w-full min-w-0 max-w-full bg-black border border-neutral-700 text-white rounded-sm focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 transition-all placeholder:text-gray-500 box-border";
   const labelClass = "block text-xs font-bold uppercase text-gray-500 mb-2";
 
   return (
@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
               </div>
               <span className="min-w-0 wrap-break-word">
                 Next Slot:{" "}
-                <span className="font-semibold bg-yellow-500/20 px-2 py-1 rounded-lg text-yellow-500 text-sm">
+                <span className="font-semibold bg-yellow-500/20 px-3 leading-none py-1 rounded-lg text-yellow-500 text-sm">
                   November 1st
                 </span>
               </span>

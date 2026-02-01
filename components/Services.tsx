@@ -79,7 +79,7 @@ const Services: React.FC = () => {
             </div>
 
             <h3
-              className="font-bold text-white mb-2 sm:mb-3 uppercase tracking-tight wrap-break-word min-w-0"
+              className="font-bold text-white mb-2 sm:mb-3  tracking-tight wrap-break-word min-w-0"
               style={{ fontSize: "var(--text-card-title)" }}
             >
               {service.title}
