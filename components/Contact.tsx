@@ -21,9 +21,9 @@ const Contact: React.FC = () => {
       subtitle="I only take on 2 new clients per month. Apply below."
       darker
     >
-      <div className="grid md:grid-cols-2 gap-16 bg-neutral-900 border border-neutral-800 rounded-3xl p-8 md:p-16">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-16 bg-neutral-900 border border-neutral-800 rounded-3xl p-6 md:p-16">
         <div>
-          <h3 className="text-3xl font-bold text-white mb-8 uppercase tracking-tight">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 uppercase tracking-tight">
             The Process
           </h3>
           <div className="space-y-8 relative">
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="mt-12 bg-black/50 p-6 rounded-xl border border-neutral-800 space-y-4">
-            <div className="flex items-center gap-4 text-gray-300">
+            <div className="flex items-center gap-4 text-gray-300 break-all">
               <div className="w-8 h-8 bg-neutral-800 rounded flex items-center justify-center text-yellow-500">
                 <Mail size={16} />
               </div>
@@ -117,9 +117,10 @@ const Contact: React.FC = () => {
                   className="w-full bg-black border border-neutral-700 p-4 rounded-lg focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 transition-all text-gray-400"
                 >
                   <option value="">Select Investment Level</option>
-                  <option value="5-10k">$5,000 - $10,000</option>
-                  <option value="10-25k">$10,000 - $25,000</option>
-                  <option value="25k+">$25,000+</option>
+                  <option value="1-3k">$1,000 - $3,000</option>
+                  <option value="3-5k">$3,000 - $5,000</option>
+                  <option value="5k+">$5,000+</option>
+                  <option value="custom">Custom Budget</option>
                 </select>
               </div>
 

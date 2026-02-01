@@ -20,13 +20,13 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={`py-20 ${darker ? "bg-black" : "bg-neutral-900"} ${className}`}
+      className={`py-12 md:py-20 ${darker ? "bg-black" : "bg-neutral-900"} ${className}`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-6">
         {(title || subtitle) && (
           <div className="mb-16 text-center max-w-3xl mx-auto">
             {title && (
-              <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 text-white tracking-tighter">
+              <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4 text-white tracking-tighter">
                 {title} <span className="text-yellow-500">.</span>
               </h2>
             )}

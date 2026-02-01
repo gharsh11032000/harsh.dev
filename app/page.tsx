@@ -2,7 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import ChatBot from "../components/ChatBot";
+
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white selection:bg-yellow-500 selection:text-black">
       {/* Navbar Overlay */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5 h-20 flex items-center">
-        <div className="container mx-auto px-6 w-full flex justify-between items-center">
+      <nav className="glass-heavy fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl rounded-full px-4 md:px-8 py-3 md:py-4 shadow-2xl transition-all duration-300 border border-white/10">
+        <div className="flex justify-between items-center w-full gap-4 md:gap-12">
           <div
             className="text-2xl font-bold tracking-tighter cursor-pointer z-50 relative"
             onClick={() => window.scrollTo(0, 0)}
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="hidden md:block">
             <a
               href="#contact"
-              className="bg-white text-black px-5 py-2 text-sm font-bold uppercase tracking-wider rounded hover:bg-yellow-500 transition-colors"
+              className="bg-white text-black px-6 py-3 text-sm font-bold uppercase tracking-wider rounded-full hover:bg-yellow-500 transition-colors shadow-lg"
             >
               Book Call
             </a>
@@ -111,7 +111,6 @@ export default function Home() {
       </main>
 
       <Footer />
-      <ChatBot />
     </div>
   );
 }

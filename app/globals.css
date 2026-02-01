@@ -18,6 +18,18 @@ body {
   color: #ffffff;
   background-color: #0a0a0a;
   font-family: "Inter", sans-serif;
+  background-image:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(234, 179, 8, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(59, 130, 246, 0.08),
+      transparent 25%
+    );
+  background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
@@ -37,5 +49,32 @@ body {
 @layer utilities {
   .container {
     @apply mx-auto max-w-7xl w-full;
+  }
+
+  .glass {
+    background: rgba(24, 24, 27, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+  }
+
+  .glass-heavy {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass-button {
+    background: rgba(234, 179, 8, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(234, 179, 8, 0.3);
+  }
+  .glass-button:hover {
+    background: rgba(234, 179, 8, 0.2);
+    border-color: rgba(234, 179, 8, 0.6);
   }
 }
