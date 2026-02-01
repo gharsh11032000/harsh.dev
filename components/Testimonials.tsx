@@ -40,35 +40,42 @@ const Testimonials: React.FC = () => {
       title="Social Proof"
       subtitle="Real clients. Real revenue. Real results."
     >
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 min-w-0 w-full">
         {testimonials.map((t) => (
           <div
             key={t.id}
-            className="glass p-6 md:p-8 rounded-2xl relative flex flex-col hover:border-white/20 transition-colors"
+            className="glass rounded-xl sm:rounded-2xl border border-white/10 relative flex flex-col hover:border-white/20 transition-colors min-w-0"
+            style={{ padding: "clamp(1.25rem, 3vw, 2rem)" }}
           >
             {/* Stars */}
-            <div className="flex gap-1 text-yellow-500 mb-6">
+            <div className="flex gap-1 text-yellow-500 mb-4 sm:mb-6 shrink-0">
               {[1, 2, 3, 4, 5].map((i) => (
                 <Star key={i} size={16} fill="currentColor" />
               ))}
             </div>
 
-            <p className="text-gray-200 font-medium leading-relaxed mb-8 flex-1">
+            <p
+              className="text-gray-200 font-medium leading-relaxed mb-6 sm:mb-8 flex-1 min-w-0 wrap-break-word"
+              style={{ fontSize: "var(--text-body)" }}
+            >
               "{t.quote}"
             </p>
 
-            <div className="flex items-center gap-4 pt-6 border-t border-neutral-800">
+            <div className="flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-neutral-800 min-w-0">
               <img
                 src={t.avatarUrl}
                 alt={t.name}
                 loading="lazy"
-                className="w-12 h-12 rounded-full border-2 border-yellow-500"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border-2 border-yellow-500 shrink-0 object-cover"
               />
-              <div>
-                <h4 className="text-white font-black text-sm uppercase">
+              <div className="min-w-0">
+                <h4
+                  className="text-white font-bold uppercase wrap-break-word"
+                  style={{ fontSize: "var(--text-body)" }}
+                >
                   {t.name}
                 </h4>
-                <p className="text-xs text-gray-500 font-bold uppercase tracking-wider">
+                <p className="text-xs text-gray-500 font-bold uppercase tracking-wider wrap-break-word">
                   {t.role}, {t.company}
                 </p>
               </div>

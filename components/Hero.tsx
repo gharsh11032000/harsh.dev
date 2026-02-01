@@ -15,23 +15,31 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center pt-36 md:pt-48 bg-[#050505] overflow-hidden selection:bg-yellow-500 selection:text-black">
+    <div
+      className="relative sm:min-h-screen flex items-center bg-[#050505] overflow-hidden selection:bg-yellow-500 selection:text-black pt-24 pb-7 sm:pt-16 sm:pb-6 lg:pt-[clamp(5rem,10vw,7.5rem)] lg:pb-[clamp(2rem,5vw,4rem)]"
+    >
       {/* Grid Pattern Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]" />
 
       {/* Radial Gradient for spotlight effect */}
       <div className="absolute top-0 left-0 right-0 h-[500px] bg-linear-to-b from-yellow-500/10 to-transparent blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 container mx-auto px-4 md:px-6 w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative z-10 container w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-8 items-center min-w-0">
         {/* Background Blob for Glass Effect */}
-        <div className="absolute top-1/2 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px] -z-10 animate-pulse"></div>
-        <div className="flex flex-col justify-center glass p-5 md:p-12 rounded-3xl">
-          <div className="inline-flex items-center gap-2 self-start bg-black/40 border border-white/10 text-yellow-500 font-bold px-4 py-2 rounded-full mb-8 text-xs uppercase tracking-widest shadow-lg backdrop-blur-md">
-            <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+        <div className="absolute top-1/2 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px] -z-10 animate-pulse" />
+        <div
+          className="flex flex-col justify-center glass rounded-2xl sm:rounded-3xl min-w-0 w-full max-w-full"
+          style={{ padding: "clamp(1.25rem, 4vw, 3rem)" }}
+        >
+          <div className="inline-flex items-center gap-2 self-start bg-black/40 border border-white/10 text-yellow-500 font-bold px-4 py-2 rounded-full mb-6 sm:mb-8 text-xs uppercase tracking-widest shadow-lg backdrop-blur-md">
+            <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
             Accepting New Clients
           </div>
 
-          <h1 className="text-4xl md:text-8xl font-bold text-white leading-[0.9] mb-8 tracking-tighter uppercase drop-shadow-2xl text-balance">
+          <h1
+            className="font-bold text-white leading-[0.9] mb-6 sm:mb-8 tracking-tighter uppercase drop-shadow-2xl text-balance wrap-break-word"
+            style={{ fontSize: "var(--text-hero)" }}
+          >
             I Build <br />
             <span className="text-yellow-500 drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]">
               Revenue
@@ -40,67 +48,72 @@ const Hero: React.FC = () => {
             Engines.
           </h1>
 
-          <p className="text-xl text-gray-300 mb-10 font-medium leading-relaxed max-w-lg border-l-4 border-yellow-500 pl-6 mix-blend-plus-lighter">
+          <p
+            className="text-gray-300 font-medium leading-relaxed border-l-4 border-yellow-500 pl-4 sm:pl-6 mix-blend-plus-lighter min-w-0 mb-8 sm:mb-10 max-w-[min(32rem,100%)]"
+            style={{ fontSize: "var(--text-body)" }}
+          >
             Stop paying for "code". Start paying for{" "}
             <span className="text-white font-bold">outcomes</span>. I engineer
             high-performance applications that print cash.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-5">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 flex-wrap">
             <Button
               onClick={scrollToContact}
-              className="flex items-center justify-center gap-2 text-lg px-5!"
+              className="flex items-center justify-center gap-2 px-5!"
+              style={{ fontSize: "var(--text-body)" }}
             >
-              Start Scaling <ChevronRight size={24} strokeWidth={3} />
+              Start Scaling <ChevronRight size={22} strokeWidth={3} />
             </Button>
             <Button
               variant="outline"
               onClick={scrollToPortfolio}
-              className="flex items-center justify-center gap-2 text-lg px-5!"
+              className="flex items-center justify-center gap-2 px-5!"
+              style={{ fontSize: "var(--text-body)" }}
             >
-              See Proof <Download size={24} strokeWidth={3} />
+              See Proof <Download size={22} strokeWidth={3} />
             </Button>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 sm:flex sm:items-center gap-6 sm:gap-8 text-sm font-bold text-gray-400 uppercase tracking-wider">
+          <div className="mt-10 sm:mt-12 grid grid-cols-2 sm:flex sm:items-center gap-4 sm:gap-6 lg:gap-8 text-sm font-bold text-gray-400 uppercase tracking-wider min-w-0">
             <div className="flex flex-col">
-              <span className="text-white text-xl font-bold">3yr+</span>
+              <span className="text-white font-bold" style={{ fontSize: "var(--text-body)" }}>3yr+</span>
               <span>Exp</span>
             </div>
-            <div className="hidden sm:block w-px h-10 bg-white/10"></div>
+            <div className="hidden sm:block w-px h-10 bg-white/10 shrink-0" />
             <div className="flex flex-col">
-              <span className="text-white text-xl font-bold">100%</span>
+              <span className="text-white font-bold" style={{ fontSize: "var(--text-body)" }}>100%</span>
               <span>Delivery</span>
             </div>
-            <div className="hidden sm:block w-px h-10 bg-white/10"></div>
+            <div className="hidden sm:block w-px h-10 bg-white/10 shrink-0" />
             <div className="flex flex-col">
-              <span className="text-white text-xl font-bold">$500k+</span>
+              <span className="text-white font-bold" style={{ fontSize: "var(--text-body)" }}>$500k+</span>
               <span>Client Rev</span>
             </div>
           </div>
         </div>
 
         {/* Right: Visual/Image */}
-        <div className="relative hidden lg:block h-full">
-          <div className="relative z-10 rounded-3xl h-full overflow-hidden shadow-[0_0_50px_-12px_rgba(234,179,8,0.3)] border border-neutral-800 bg-neutral-900">
+        <div className="relative hidden lg:block h-full min-w-0">
+          <div className="relative z-10 rounded-2xl sm:rounded-3xl h-full overflow-hidden shadow-[0_0_50px_-12px_rgba(234,179,8,0.3)] border border-neutral-800 bg-neutral-900 min-w-0">
             <Image
               src="https://picsum.photos/600/700?grayscale"
               alt="HARSH Developer"
-              className="w-full h-auto object-cover opacity-80 hover:opacity-100 transition-all duration-700 hover:scale-105"
+              className="w-full h-auto object-cover opacity-80 hover:opacity-100 transition-all duration-700 hover:scale-105 min-w-0"
               width={600}
               height={700}
             />
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80" />
 
             {/* Floating Card */}
-            <div className="absolute bottom-8 left-8 right-8 glass-heavy p-6 rounded-2xl shadow-2xl">
-              <div className="flex items-center gap-4 mb-3">
-                <div className="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold text-xl">
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 glass-heavy rounded-xl sm:rounded-2xl shadow-2xl min-w-0" style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}>
+              <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3 min-w-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold shrink-0" style={{ fontSize: "var(--text-body)" }}>
                   $
                 </div>
-                <div>
-                  <p className="font-bold text-white text-lg leading-none">
+                <div className="min-w-0">
+                  <p className="font-bold text-white leading-none wrap-break-word" style={{ fontSize: "var(--text-body)" }}>
                     ROI Focused
                   </p>
                   <p className="text-xs text-gray-400 uppercase tracking-wider mt-1">
@@ -108,14 +121,13 @@ const Hero: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-sm text-gray-300 font-medium">
+              <p className="text-gray-300 font-medium text-sm sm:text-base wrap-break-word min-w-0">
                 "If the code doesn't increase your bottom line, I haven't done
                 my job."
               </p>
             </div>
           </div>
-          {/* Decorative Elements */}
-          <div className="absolute -top-12 -right-12 w-64 h-64 bg-yellow-500/20 blur-[80px] rounded-full pointer-events-none"></div>
+          <div className="absolute -top-12 -right-12 w-64 h-64 bg-yellow-500/20 blur-[80px] rounded-full pointer-events-none" />
         </div>
       </div>
     </div>

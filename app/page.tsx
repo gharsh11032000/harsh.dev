@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white selection:bg-yellow-500 selection:text-black">
       {/* Navbar Overlay */}
-      <nav className="glass-heavy fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl rounded-full px-4 md:px-8 py-3 md:py-4 shadow-2xl transition-all duration-300 border border-white/10">
+      <nav className="glass-heavy fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl rounded-full px-3 pl-6 pr-4 py-3 md:py-4 shadow-2xl transition-all duration-300 border border-white/10">
         <div className="flex justify-between items-center w-full gap-4 md:gap-12">
           <div
             className="text-2xl font-bold tracking-tighter cursor-pointer z-50 relative"
@@ -101,7 +101,7 @@ export default function Home() {
         )}
       </nav>
 
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <Services />
         <LeadMagnet />
