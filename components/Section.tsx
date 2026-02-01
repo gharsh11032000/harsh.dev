@@ -9,6 +9,8 @@ interface SectionProps {
   darker?: boolean;
   /** Remove bottom padding so the next section sits flush (e.g. Services above LeadMagnet) */
   noSpaceBelow?: boolean;
+  /** Subtle hero-style depth: faint grid + soft glow (glassmorphism) */
+  withDepth?: boolean;
 }
 
 const Section: React.FC<SectionProps> = ({
@@ -19,17 +21,25 @@ const Section: React.FC<SectionProps> = ({
   className = "",
   darker = false,
   noSpaceBelow = false,
+  withDepth = false,
 }) => {
   return (
     <section
       id={id}
-      className={`overflow-hidden ${darker ? "bg-black" : "bg-neutral-900"} ${className}`}
+      className={`relative overflow-hidden ${darker ? "bg-black" : "bg-neutral-900"} ${className}`}
       style={{
         paddingTop: "var(--section-padding-block)",
         paddingBottom: noSpaceBelow ? 0 : "var(--section-padding-block)",
       }}
     >
-      <div className="container">
+      {withDepth && (
+        <>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none" aria-hidden />
+          <div className="absolute top-0 right-0 w-[min(80vw,400px)] h-[min(60vw,320px)] bg-yellow-500/10 rounded-full blur-[80px] pointer-events-none" aria-hidden />
+          <div className="absolute bottom-1/4 left-0 w-[min(60vw,280px)] h-[min(50vw,240px)] bg-yellow-500/10 rounded-full blur-[60px] pointer-events-none" aria-hidden />
+        </>
+      )}
+      <div className="container relative z-10">
         {(title || subtitle) && (
           <div className="mb-10 sm:mb-14 md:mb-16 text-center max-w-[min(48rem,100%)] mx-auto min-w-0">
             {title && (

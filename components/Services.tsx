@@ -62,6 +62,7 @@ const Services: React.FC = () => {
       id="services"
       title="How I Add Value"
       subtitle="I don't sell 'hours'. I sell assets that solve expensive problems."
+      withDepth
     >
       <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-2 sm:pb-0 sm:overflow-visible scrollbar-hide">
         <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 w-max sm:w-full min-w-0">
@@ -75,7 +76,7 @@ const Services: React.FC = () => {
               <ArrowUpRight size={22} />
             </div>
 
-            <div className="mb-4 sm:mb-6 bg-black w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center border border-neutral-800 text-neutral-400 group-hover:text-yellow-500 group-hover:border-yellow-500/50 transition-all shadow-inner shrink-0">
+            <div className="mb-4 sm:mb-6 bg-black w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center border border-neutral-800 text-neutral-400 group-hover:text-yellow-500 group-hover:border-yellow-500/50 transition-all shadow-inner shrink-0">
               {service.icon}
             </div>
 

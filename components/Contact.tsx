@@ -24,6 +24,7 @@ const Contact: React.FC = () => {
       title="Ready to Scale?"
       subtitle="I only take on 2 new clients per month. Apply below."
       darker
+      withDepth
     >
       <div
         className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 glass border border-white/10 rounded-2xl sm:rounded-3xl min-w-0 w-full overflow-hidden"

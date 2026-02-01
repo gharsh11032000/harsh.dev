@@ -33,7 +33,7 @@ const LeadMagnet: React.FC = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-16 items-stretch lg:items-center min-w-0 w-full">
             {/* Copy */}
             <div className="min-w-0 flex flex-col">
-              <div className="inline-flex items-center gap-1 bg-yellow-500 pr-3 text-black font-bold px-2 py-2 rounded-full text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit">
+              <div className="inline-flex items-center gap-1 bg-yellow-500  text-black font-bold px-3 py-2 rounded-full text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit">
                 <ShieldCheck size={16} className="shrink-0" />
                 Top Secret Access
               </div>

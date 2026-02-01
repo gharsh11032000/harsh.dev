@@ -9,10 +9,10 @@ const Footer: React.FC = () => {
         style={{ paddingBlock: "var(--section-padding-block)" }}
       >
         <h2
-          className="font-bold text-white uppercase mb-5 sm:mb-6 tracking-tighter wrap-break-word"
+          className="font-bold text-white  mb-5 sm:mb-6 tracking-tighter wrap-break-word"
           style={{ fontSize: "var(--text-card-title)" }}
         >
-          HARSH<span className="text-yellow-500">.</span>Dev
+          harsh<span className="text-yellow-500">.</span>xyz
         </h2>
 
         <div className="flex gap-5 sm:gap-6 mb-6 sm:mb-8 flex-wrap justify-center">
@@ -39,17 +39,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        <div className="flex flex-wrap gap-4 sm:gap-6 mb-6 sm:mb-8 justify-center text-neutral-500 font-medium min-w-0" style={{ fontSize: "var(--text-body)" }}>
-          <a href="#" className="hover:text-yellow-500 transition-colors wrap-break-word">
-            Privacy Policy
-          </a>
-          <a href="#" className="hover:text-yellow-500 transition-colors wrap-break-word">
-            Terms of Service
-          </a>
-          <a href="#" className="hover:text-yellow-500 transition-colors wrap-break-word">
-            Cookie Policy
-          </a>
-        </div>
+
 
         <p className="text-neutral-600 wrap-break-word min-w-0 max-w-[min(32rem,100%)]" style={{ fontSize: "var(--text-body)" }}>
           © {new Date().getFullYear()} Harsh Gupta. All rights reserved.
