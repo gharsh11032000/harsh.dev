@@ -34,9 +34,9 @@ const Section: React.FC<SectionProps> = ({
     >
       {withDepth && (
         <>
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none" aria-hidden />
-          <div className="absolute top-0 right-0 w-[min(80vw,400px)] h-[min(60vw,320px)] bg-yellow-500/10 rounded-full blur-[80px] pointer-events-none" aria-hidden />
-          <div className="absolute bottom-1/4 left-0 w-[min(60vw,280px)] h-[min(50vw,240px)] bg-yellow-500/10 rounded-full blur-[60px] pointer-events-none" aria-hidden />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none md:hidden" aria-hidden />
+          <div className="absolute top-1/4 right-1/4 w-[min(80vw,400px)] h-[min(60vw,320px)] bg-yellow-500/10 rounded-full blur-[80px] pointer-events-none md:hidden" aria-hidden />
+          <div className="absolute bottom-1/4 left-1/4 w-[min(60vw,280px)] h-[min(50vw,240px)] bg-yellow-500/10 rounded-full blur-[60px] pointer-events-none md:hidden" aria-hidden />
         </>
       )}
       <div className="container relative z-10">
