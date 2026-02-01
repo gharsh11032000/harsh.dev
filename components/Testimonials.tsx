@@ -39,7 +39,6 @@ const Testimonials: React.FC = () => {
       id="testimonials"
       title="Social Proof"
       subtitle="Real clients. Real revenue. Real results."
-      withDepth
       noSpaceBelow
     >
       <div className="-mx-(--container-gutter) px-(--container-gutter) sm:mx-0 sm:px-0 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-[var(--section-padding-block)] scrollbar-hide">

@@ -38,7 +38,6 @@ const Portfolio: React.FC = () => {
       title="The Track Record"
       subtitle="Talk is cheap. Here are the numbers."
       darker
-      withDepth
       noSpaceBelow
     >
       <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-[var(--section-padding-block)] lg:overflow-visible scrollbar-hide">

@@ -62,7 +62,6 @@ const Services: React.FC = () => {
       id="services"
       title="How I Add Value"
       subtitle="I don't sell 'hours'. I sell assets that solve expensive problems."
-      withDepth
       noSpaceBelow
     >
       <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-[var(--section-padding-block)] sm:overflow-visible scrollbar-hide">
