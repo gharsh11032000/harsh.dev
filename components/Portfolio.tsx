@@ -39,8 +39,9 @@ const Portfolio: React.FC = () => {
       subtitle="Talk is cheap. Here are the numbers."
       darker
       withDepth
+      noSpaceBelow
     >
-      <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-2 sm:pb-0 lg:overflow-visible lg:pb-0 scrollbar-hide">
+      <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-[var(--section-padding-block)] lg:overflow-visible scrollbar-hide">
         <div className="flex lg:flex-col gap-6 sm:gap-8 lg:gap-16 w-max lg:w-full min-w-0">
         {projects.map((project, index) => (
           <div

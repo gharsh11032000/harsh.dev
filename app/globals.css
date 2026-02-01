@@ -13,19 +13,19 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 193;
   --background-end-rgb: 255, 255, 255;
-  /* Section & layout */
+
   --section-padding-block: clamp(3rem, 8vw, 6rem);
   --section-margin-block: clamp(2rem, 6vw, 4rem);
   --container-max: 1280px;
   --container-gutter: clamp(1rem, 4vw, 1.5rem);
-  /* Radius (consistent roundness) */
+
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
   --radius-xl: 1.25rem;
   --radius-2xl: 1.5rem;
   --radius-3xl: 1.875rem;
-  /* Typography scale */
+
   --text-hero: clamp(2.25rem, 6vw + 1rem, 6rem);
   --text-section-title: clamp(1.875rem, 3vw + 1rem, 3.5rem);
   --text-card-title: clamp(1.125rem, 1.5vw + 0.5rem, 1.5rem);
@@ -65,7 +65,7 @@ body {
 }
 
 @layer utilities {
-  /* Fluid container: never overflows, consistent max-width */
+
   .container {
     width: 100%;
     max-width: min(var(--container-max), 100%);
@@ -106,7 +106,7 @@ body {
     border-color: rgba(234, 179, 8, 0.6);
   }
 
-  /* Hide scrollbar but keep element scrollable (mobile horizontal scroll) */
+
   .scrollbar-hide {
     -ms-overflow-style: none !important;
     scrollbar-width: none !important;

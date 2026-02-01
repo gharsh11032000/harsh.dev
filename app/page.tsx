@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white selection:bg-yellow-500 selection:text-black">
-      <nav className="glass-heavy w-max fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 rounded-full px-3 pl-6 pr-3 py-4 shadow-2xl transition-all duration-300 border border-white/10">
+      <nav className="glass-heavy backdrop-blur-sm w-max fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 rounded-full px-3 pl-6 pr-3 py-4 shadow-2xl transition-all duration-300 border border-white/10">
         <div className="flex justify-between items-center w-full gap-12">
           <div
             className="md:text-2xl text-xl font-bold tracking-tighter cursor-pointer z-50 relative"
@@ -47,7 +47,7 @@ export default function Home() {
 
       </nav>
 
-      <main className="overflow-x-hidden">
+      <main>
         <Hero />
         <Services />
         <LeadMagnet />

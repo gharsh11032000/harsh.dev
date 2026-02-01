@@ -60,7 +60,7 @@ const LeadMagnet: React.FC = () => {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-3 sm:gap-4 bg-neutral-900/50 p-3 sm:p-4 rounded-xl border border-neutral-800 min-w-0"
+                    className="flex items-center gap-3 sm:gap-4 bg-neutral-900/50 p-3 sm:p-4 rounded-md border border-neutral-800 min-w-0"
                   >
                     <CheckCircle
                       className="text-black bg-yellow-500 rounded-full shrink-0"
@@ -76,7 +76,7 @@ const LeadMagnet: React.FC = () => {
 
             {/* Form */}
             <div
-              className="glass rounded-lg sm:rounded-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center min-w-0 w-full"
+              className="glass rounded-md sm:rounded-lg border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center min-w-0 w-full"
               style={{
                 padding: "clamp(1.25rem, 3vw, 2.5rem)",
               }}

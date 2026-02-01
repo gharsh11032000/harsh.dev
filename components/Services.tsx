@@ -63,8 +63,9 @@ const Services: React.FC = () => {
       title="How I Add Value"
       subtitle="I don't sell 'hours'. I sell assets that solve expensive problems."
       withDepth
+      noSpaceBelow
     >
-      <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-2 sm:pb-0 sm:overflow-visible scrollbar-hide">
+      <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-[var(--section-padding-block)] sm:overflow-visible scrollbar-hide">
         <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 w-max sm:w-full min-w-0">
           {services.map((service) => (
           <div

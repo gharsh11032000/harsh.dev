@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div
-            className="mt-10 sm:mt-12 bg-black/50 rounded-lg border border-neutral-800 space-y-4 min-w-0"
+            className="mt-10 sm:mt-12 bg-black/50 rounded-md sm:rounded-lg border border-neutral-800 space-y-4 min-w-0"
             style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}
           >
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
@@ -163,7 +163,7 @@ const Contact: React.FC = () => {
                 <textarea
                   required
                   rows={4}
-                  className={`${inputClass} p-3 sm:p-4 resize-y min-h-24`}
+                  className={`${inputClass} p-3 sm:p-4 resize-none min-h-24`}
                   placeholder="Tell me what you need built and what your goals are."
                 />
               </div>
