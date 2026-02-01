@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 container w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-8 items-center min-w-0">
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-yellow-500/50 rounded-full blur-[100px] -z-10 animate-pulse" />
         <div
-          className="flex flex-col justify-center glass rounded-2xl sm:rounded-3xl min-w-0 w-full max-w-full"
+          className="flex flex-col justify-center glass rounded-xl sm:rounded-2xl min-w-0 w-full max-w-full"
           style={{ padding: "clamp(1.25rem, 4vw, 3rem)" }}
         >
           <div className="inline-flex items-center gap-2 self-start bg-black/40 border border-white/10 text-yellow-500 font-bold px-4 py-2 rounded-full mb-6 sm:mb-8 text-xs uppercase tracking-widest shadow-lg backdrop-blur-md">
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
 
         {/* Right: Visual/Image */}
         <div className="relative hidden lg:block h-full min-w-0">
-          <div className="relative z-10 rounded-2xl sm:rounded-3xl h-full overflow-hidden border border-neutral-800 bg-neutral-900 min-w-0">
+          <div className="relative z-10 rounded-xl sm:rounded-2xl h-full overflow-hidden border border-neutral-800 bg-neutral-900 min-w-0">
             <Image
               src="https://picsum.photos/600/700?grayscale"
               alt="HARSH Developer"
@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80 pointer-events-none" />
 
             {/* Floating Card */}
-            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 glass-heavy rounded-xl sm:rounded-2xl shadow-2xl min-w-0" style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}>
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 glass-heavy rounded-lg sm:rounded-xl shadow-2xl min-w-0" style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}>
               <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3 min-w-0">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold shrink-0" style={{ fontSize: "var(--text-body)" }}>
                   $

@@ -24,7 +24,7 @@ const LeadMagnet: React.FC = () => {
     >
       <div className="container">
         <div
-          className="bg-black text-white rounded-2xl sm:rounded-3xl shadow-2xl relative overflow-hidden min-w-0 w-full max-w-full"
+          className="bg-black text-white rounded-xl sm:rounded-2xl shadow-2xl relative overflow-hidden min-w-0 w-full max-w-full"
           style={{ padding: "clamp(1.5rem, 4vw, 4rem)" }}
         >
           {/* Texture */}
@@ -76,7 +76,7 @@ const LeadMagnet: React.FC = () => {
 
             {/* Form */}
             <div
-              className="glass rounded-xl sm:rounded-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center min-w-0 w-full"
+              className="glass rounded-lg sm:rounded-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center min-w-0 w-full"
               style={{
                 padding: "clamp(1.25rem, 3vw, 2.5rem)",
               }}

@@ -69,7 +69,7 @@ const Services: React.FC = () => {
           {services.map((service) => (
           <div
             key={service.id}
-            className="glass group relative rounded-xl sm:rounded-2xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_40px_-10px_rgba(234,179,8,0.2)] w-[85vw] min-w-[280px] sm:w-auto sm:min-w-0 shrink-0 snap-center"
+            className="glass group relative rounded-lg border border-white/10 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_40px_-10px_rgba(234,179,8,0.2)] w-[85vw] min-w-[280px] sm:w-auto sm:min-w-0 shrink-0 snap-center"
             style={{ padding: "clamp(1.25rem, 3vw, 2rem)" }}
           >
             <div className="absolute top-4 right-4 sm:top-5 sm:right-5 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-500 shrink-0">

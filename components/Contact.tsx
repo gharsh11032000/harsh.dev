@@ -1,7 +1,24 @@
-import { Calendar, CheckCircle, Mail, MapPin } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import React, { useState } from "react";
 import Button from "./Button";
 import Section from "./Section";
+
+/* Filled icons for contact info (Lucide is stroke-based) */
+const IconMailFilled = ({ size = 16 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="shrink-0" aria-hidden>
+    <path d="M2 6l10 7 10-7v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z" />
+  </svg>
+);
+const IconMapPinFilled = ({ size = 16 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="shrink-0" aria-hidden>
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+  </svg>
+);
+const IconCalendarFilled = ({ size = 16 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="shrink-0" aria-hidden>
+    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+  </svg>
+);
 
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -27,7 +44,7 @@ const Contact: React.FC = () => {
       withDepth
     >
       <div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 glass border border-white/10 rounded-2xl sm:rounded-3xl min-w-0 w-full overflow-hidden"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 glass border border-white/10 rounded-xl sm:rounded-2xl min-w-0 w-full overflow-hidden"
         style={{ padding: "clamp(1.25rem, 4vw, 4rem)" }}
       >
         <div className="min-w-0">
@@ -74,24 +91,24 @@ const Contact: React.FC = () => {
           </div>
 
           <div
-            className="mt-10 sm:mt-12 bg-black/50 rounded-xl border border-neutral-800 space-y-4 min-w-0"
+            className="mt-10 sm:mt-12 bg-black/50 rounded-lg border border-neutral-800 space-y-4 min-w-0"
             style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}
           >
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <Mail size={16} />
+                <IconMailFilled size={16} />
               </div>
               <span className="font-medium wrap-break-word min-w-0">HARSH@example.com</span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <MapPin size={16} />
+                <IconMapPinFilled size={16} />
               </div>
               <span className="font-medium wrap-break-word min-w-0">Remote / Global</span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <Calendar size={16} />
+                <IconCalendarFilled size={16} />
               </div>
               <span className="min-w-0 wrap-break-word">
                 Next Slot:{" "}
@@ -162,7 +179,7 @@ const Contact: React.FC = () => {
             </form>
           ) : (
             <div
-              className="h-full flex flex-col items-center justify-center text-center bg-black rounded-2xl border border-yellow-500/30 min-w-0"
+              className="h-full flex flex-col items-center justify-center text-center bg-black rounded-xl border border-yellow-500/30 min-w-0"
               style={{ padding: "clamp(2rem, 4vw, 2.5rem)" }}
             >
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-yellow-500/20 text-yellow-500 rounded-full flex items-center justify-center mb-4 sm:mb-6 shrink-0">

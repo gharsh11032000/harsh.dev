@@ -46,7 +46,7 @@ const Testimonials: React.FC = () => {
         {testimonials.map((t) => (
           <div
             key={t.id}
-            className="glass rounded-xl sm:rounded-2xl border border-white/10 relative flex flex-col hover:border-white/20 transition-colors w-[85vw] min-w-[280px] sm:w-auto sm:min-w-0 shrink-0 snap-center"
+            className="glass rounded-lg border border-white/10 relative flex flex-col hover:border-white/20 transition-colors w-[85vw] min-w-[280px] sm:w-auto sm:min-w-0 shrink-0 snap-center"
             style={{ padding: "clamp(1.25rem, 3vw, 2rem)" }}
           >
             {/* Stars */}

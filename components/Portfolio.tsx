@@ -49,8 +49,8 @@ const Portfolio: React.FC = () => {
           >
             {/* Image Side */}
             <div className="w-full min-w-0 lg:min-w-0 lg:flex-[1.2] group relative">
-              <div className="absolute -inset-1 sm:-inset-1.5 rounded-xl sm:rounded-2xl bg-neutral-800/80 border border-white/5 -z-10" aria-hidden />
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-video min-w-0 shadow-lg">
+              <div className="absolute -inset-1 sm:-inset-1.5 rounded-lg sm:rounded-xl bg-neutral-800/80 border border-white/5 -z-10" aria-hidden />
+              <div className="relative rounded-lg sm:rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-video min-w-0 shadow-lg">
                 <img
                   src={project.imageUrl}
                   alt={project.title}
@@ -84,7 +84,7 @@ const Portfolio: React.FC = () => {
                 </div>
 
                 <div
-                  className="bg-neutral-900 border-l-4 border-yellow-500 rounded-r-xl min-w-0"
+                  className="bg-neutral-900 border-l-4 border-yellow-500 rounded-r-lg min-w-0"
                   style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}
                 >
                   <p className="text-xs font-bold text-neutral-500 uppercase tracking-widest mb-1">
