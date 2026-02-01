@@ -18,28 +18,28 @@ const Footer: React.FC = () => {
         <div className="flex gap-5 sm:gap-6 mb-6 sm:mb-8 flex-wrap justify-center">
           <a
             href="#"
-            className="text-gray-500 hover:text-yellow-500 transition-colors p-1"
+            className="text-neutral-500 hover:text-yellow-500 transition-colors p-1"
             aria-label="Twitter"
           >
             <Twitter size={22} fill="currentColor" strokeWidth={0} />
           </a>
           <a
             href="#"
-            className="text-gray-500 hover:text-yellow-500 transition-colors p-1"
+            className="text-neutral-500 hover:text-yellow-500 transition-colors p-1"
             aria-label="LinkedIn"
           >
             <Linkedin size={22} fill="currentColor" strokeWidth={0} />
           </a>
           <a
             href="#"
-            className="text-gray-500 hover:text-yellow-500 transition-colors p-1"
+            className="text-neutral-500 hover:text-yellow-500 transition-colors p-1"
             aria-label="GitHub"
           >
             <Github size={22} fill="currentColor" strokeWidth={0} />
           </a>
         </div>
 
-        <div className="flex flex-wrap gap-4 sm:gap-6 mb-6 sm:mb-8 justify-center text-gray-500 font-medium min-w-0" style={{ fontSize: "var(--text-body)" }}>
+        <div className="flex flex-wrap gap-4 sm:gap-6 mb-6 sm:mb-8 justify-center text-neutral-500 font-medium min-w-0" style={{ fontSize: "var(--text-body)" }}>
           <a href="#" className="hover:text-yellow-500 transition-colors wrap-break-word">
             Privacy Policy
           </a>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        <p className="text-gray-600 wrap-break-word min-w-0 max-w-[min(32rem,100%)]" style={{ fontSize: "var(--text-body)" }}>
+        <p className="text-neutral-600 wrap-break-word min-w-0 max-w-[min(32rem,100%)]" style={{ fontSize: "var(--text-body)" }}>
           © {new Date().getFullYear()} Harsh Gupta. All rights reserved.
           <br className="sm:hidden" />
           <span className="hidden sm:inline"> </span>

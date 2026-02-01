@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import React from "react";
 import { Project } from "../types";
 import Section from "./Section";
@@ -39,16 +39,17 @@ const Portfolio: React.FC = () => {
       subtitle="Talk is cheap. Here are the numbers."
       darker
     >
-      <div className="flex flex-col gap-10 sm:gap-12 md:gap-14 lg:gap-16 min-w-0 w-full">
+      <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto snap-x snap-mandatory pb-2 sm:pb-0 lg:overflow-visible lg:pb-0 scrollbar-hide">
+        <div className="flex lg:flex-col gap-6 sm:gap-8 lg:gap-16 w-max lg:w-full min-w-0">
         {projects.map((project, index) => (
           <div
             key={project.id}
-            className={`flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 xl:gap-12 items-stretch lg:items-center min-w-0 w-full ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+            className={`flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 xl:gap-12 items-stretch lg:items-center w-[85vw] min-w-[280px] lg:w-full shrink-0 snap-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
           >
             {/* Image Side */}
             <div className="w-full min-w-0 lg:min-w-0 lg:flex-[1.2] group relative">
-              <div className="absolute inset-0 bg-yellow-500 rounded-xl sm:rounded-2xl rotate-1 group-hover:rotate-2 transition-transform duration-300" />
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 border-neutral-800 bg-neutral-900 aspect-video min-w-0">
+              <div className="absolute -inset-1 sm:-inset-1.5 rounded-xl sm:rounded-2xl bg-neutral-800/80 border border-white/5 -z-10" aria-hidden />
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-video min-w-0 shadow-lg">
                 <img
                   src={project.imageUrl}
                   alt={project.title}
@@ -74,7 +75,7 @@ const Portfolio: React.FC = () => {
                     {project.title}
                   </h3>
                   <p
-                    className="text-gray-400 font-medium leading-relaxed wrap-break-word min-w-0"
+                    className="text-neutral-400 font-medium leading-relaxed wrap-break-word min-w-0"
                     style={{ fontSize: "var(--text-body)" }}
                   >
                     {project.description}
@@ -85,7 +86,7 @@ const Portfolio: React.FC = () => {
                   className="bg-neutral-900 border-l-4 border-yellow-500 rounded-r-xl min-w-0"
                   style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}
                 >
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">
+                  <p className="text-xs font-bold text-neutral-500 uppercase tracking-widest mb-1">
                     The Outcome
                   </p>
                   <p
@@ -100,20 +101,17 @@ const Portfolio: React.FC = () => {
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-neutral-800 text-gray-300 text-xs font-bold uppercase rounded-lg border border-neutral-700"
+                      className="px-3 py-1 bg-neutral-800 text-neutral-300 text-xs font-bold uppercase rounded-lg border border-neutral-700"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-
-                <button className="self-start text-yellow-500 font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all min-w-0" style={{ fontSize: "var(--text-body)" }}>
-                  Read Case Study <ArrowRight size={16} />
-                </button>
               </div>
             </div>
           </div>
         ))}
+        </div>
       </div>
     </Section>
   );

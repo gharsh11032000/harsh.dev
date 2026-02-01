@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p
-            className="text-gray-300 font-medium leading-relaxed border-l-4 border-yellow-500 pl-4 sm:pl-6 mix-blend-plus-lighter min-w-0 mb-8 sm:mb-10 max-w-[min(32rem,100%)]"
+            className="text-neutral-300 font-medium leading-relaxed border-l-4 border-yellow-500 pl-4 sm:pl-6 mix-blend-plus-lighter min-w-0 mb-8 sm:mb-10 max-w-[min(32rem,100%)]"
             style={{ fontSize: "var(--text-body)" }}
           >
             Stop paying for "code". Start paying for{" "}
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
             </Button>
           </div>
 
-          <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 text-sm font-semibold text-gray-400 uppercase tracking-wider min-w-0">
+          <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 text-sm font-semibold text-neutral-400 uppercase tracking-wider min-w-0">
             <div className="flex flex-col">
               <span className="text-white font-bold" style={{ fontSize: "var(--text-body)" }}>3yr+</span>
               <span>Exp</span>
@@ -113,12 +113,12 @@ const Hero: React.FC = () => {
                   <p className="font-bold text-white leading-none wrap-break-word" style={{ fontSize: "var(--text-body)" }}>
                     ROI Focused
                   </p>
-                  <p className="text-xs text-gray-400 uppercase tracking-wider mt-1">
+                  <p className="text-xs text-neutral-400 uppercase tracking-wider mt-1">
                     Development Philosophy
                   </p>
                 </div>
               </div>
-              <p className="text-gray-300 font-medium text-sm sm:text-base wrap-break-word min-w-0">
+              <p className="text-neutral-300 font-medium text-sm sm:text-base wrap-break-word min-w-0">
                 "If the code doesn't increase your bottom line, I haven't done
                 my job."
               </p>

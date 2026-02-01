@@ -40,11 +40,12 @@ const Testimonials: React.FC = () => {
       title="Social Proof"
       subtitle="Real clients. Real revenue. Real results."
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 min-w-0 w-full">
+      <div className="-mx-[var(--container-gutter)] px-[var(--container-gutter)] sm:mx-0 sm:px-0 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-2 sm:pb-0 scrollbar-hide">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 w-max sm:w-full min-w-0">
         {testimonials.map((t) => (
           <div
             key={t.id}
-            className="glass rounded-xl sm:rounded-2xl border border-white/10 relative flex flex-col hover:border-white/20 transition-colors min-w-0"
+            className="glass rounded-xl sm:rounded-2xl border border-white/10 relative flex flex-col hover:border-white/20 transition-colors w-[85vw] min-w-[280px] sm:w-auto sm:min-w-0 shrink-0 snap-center"
             style={{ padding: "clamp(1.25rem, 3vw, 2rem)" }}
           >
             {/* Stars */}
@@ -55,7 +56,7 @@ const Testimonials: React.FC = () => {
             </div>
 
             <p
-              className="text-gray-200 font-medium leading-relaxed mb-6 sm:mb-8 flex-1 min-w-0 wrap-break-word"
+              className="text-neutral-200 font-medium leading-relaxed mb-6 sm:mb-8 flex-1 min-w-0 wrap-break-word"
               style={{ fontSize: "var(--text-body)" }}
             >
               "{t.quote}"
@@ -75,13 +76,14 @@ const Testimonials: React.FC = () => {
                 >
                   {t.name}
                 </h4>
-                <p className="text-xs text-gray-500 font-bold uppercase tracking-wider wrap-break-word">
+                <p className="text-xs text-neutral-500 font-bold uppercase tracking-wider wrap-break-word">
                   {t.role}, {t.company}
                 </p>
               </div>
             </div>
           </div>
         ))}
+        </div>
       </div>
     </Section>
   );

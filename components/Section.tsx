@@ -42,7 +42,7 @@ const Section: React.FC<SectionProps> = ({
             )}
             {subtitle && (
               <p
-                className="text-gray-400 font-medium"
+                className="text-neutral-400 font-medium"
                 style={{ fontSize: "var(--text-body)" }}
               >
                 {subtitle}

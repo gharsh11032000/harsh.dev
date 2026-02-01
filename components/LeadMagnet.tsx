@@ -45,7 +45,7 @@ const LeadMagnet: React.FC = () => {
                 Blueprint
               </h2>
               <p
-                className="text-gray-400 mb-6 sm:mb-8 font-medium min-w-0"
+                className="text-neutral-400 mb-6 sm:mb-8 font-medium min-w-0"
                 style={{ fontSize: "var(--text-body)" }}
               >
                 I've compiled the exact libraries, databases, and frameworks
@@ -76,7 +76,7 @@ const LeadMagnet: React.FC = () => {
 
             {/* Form */}
             <div
-              className="bg-neutral-900 rounded-xl sm:rounded-2xl border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex items-center justify-center min-w-0 w-full"
+              className="glass rounded-xl sm:rounded-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center min-w-0 w-full"
               style={{
                 padding: "clamp(1.25rem, 3vw, 2.5rem)",
               }}
@@ -87,13 +87,13 @@ const LeadMagnet: React.FC = () => {
                     <h3 className="font-bold text-xl sm:text-2xl text-white uppercase tracking-tight">
                       Get Instant Access
                     </h3>
-                    <p className="text-xs sm:text-sm text-gray-500 font-medium">
+                    <p className="text-xs sm:text-sm text-neutral-500 font-medium">
                       Enter your details below to unlock.
                     </p>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase text-gray-500 mb-2">
+                    <label className="block text-xs font-bold uppercase text-neutral-500 mb-2">
                       Email Address
                     </label>
                     <input
@@ -102,12 +102,12 @@ const LeadMagnet: React.FC = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="you@example.com"
-                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-sm focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-gray-500 box-border"
+                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-sm focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-neutral-500 box-border"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase text-gray-500 mb-2">
+                    <label className="block text-xs font-bold uppercase text-neutral-500 mb-2">
                       Phone Number
                     </label>
                     <input
@@ -116,19 +116,20 @@ const LeadMagnet: React.FC = () => {
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       placeholder="(555) 123-4567"
-                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-sm focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-gray-500 box-border"
+                      className="w-full min-w-0 max-w-full bg-black border border-neutral-800 text-white p-3 sm:p-4 rounded-sm focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all font-medium placeholder:text-neutral-500 box-border"
                     />
                   </div>
 
                   <Button
                     type="submit"
                     fullWidth
-                    className="mt-4 flex items-center justify-center gap-2 text-sm sm:text-lg"
+                    className="mt-4 flex items-center justify-center gap-2 py-3 px-6 sm:py-4 sm:px-8"
+                    style={{ fontSize: "var(--text-body)" }}
                   >
-                    Send Me The Blueprint <Download size={24} />
+                    Send Me The Blueprint <Download size={18} className="shrink-0" />
                   </Button>
 
-                  <div className="flex items-center justify-center gap-2 text-[10px] text-gray-600 mt-4 uppercase font-bold tracking-wider">
+                  <div className="flex items-center justify-center gap-2 text-[10px] text-neutral-600 mt-4 uppercase font-bold tracking-wider">
                     <Lock size={12} />
                     <span>100% Secure. Zero Spam.</span>
                   </div>
@@ -141,7 +142,7 @@ const LeadMagnet: React.FC = () => {
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 uppercase">
                     You're In!
                   </h3>
-                  <p className="text-gray-400 font-medium">
+                  <p className="text-neutral-400 font-medium">
                     Check your inbox. The blueprint is on its way.
                   </p>
                 </div>

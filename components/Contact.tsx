@@ -15,8 +15,8 @@ const Contact: React.FC = () => {
   };
 
   const inputClass =
-    "w-full min-w-0 max-w-full bg-black border border-neutral-700 text-white rounded-sm focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 transition-all placeholder:text-gray-500 box-border";
-  const labelClass = "block text-xs font-bold uppercase text-gray-500 mb-2";
+    "w-full min-w-0 max-w-full bg-black border border-neutral-700 text-white rounded-sm focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 transition-all placeholder:text-neutral-500 box-border";
+  const labelClass = "block text-xs font-bold uppercase text-neutral-500 mb-2";
 
   return (
     <Section
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
       darker
     >
       <div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 bg-neutral-900 border border-neutral-800 rounded-2xl sm:rounded-3xl min-w-0 w-full overflow-hidden"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 glass border border-white/10 rounded-2xl sm:rounded-3xl min-w-0 w-full overflow-hidden"
         style={{ padding: "clamp(1.25rem, 4vw, 4rem)" }}
       >
         <div className="min-w-0">
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
                     {step.title}
                   </h4>
                   <p
-                    className="text-gray-400 mt-1 wrap-break-word min-w-0"
+                    className="text-neutral-400 mt-1 wrap-break-word min-w-0"
                     style={{ fontSize: "var(--text-body)" }}
                   >
                     {step.desc}
@@ -76,19 +76,19 @@ const Contact: React.FC = () => {
             className="mt-10 sm:mt-12 bg-black/50 rounded-xl border border-neutral-800 space-y-4 min-w-0"
             style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}
           >
-            <div className="flex items-center gap-3 sm:gap-4 text-gray-300 min-w-0">
+            <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
                 <Mail size={16} />
               </div>
               <span className="font-medium wrap-break-word min-w-0">HARSH@example.com</span>
             </div>
-            <div className="flex items-center gap-3 sm:gap-4 text-gray-300 min-w-0">
+            <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
                 <MapPin size={16} />
               </div>
               <span className="font-medium wrap-break-word min-w-0">Remote / Global</span>
             </div>
-            <div className="flex items-center gap-3 sm:gap-4 text-gray-300 min-w-0">
+            <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
                 <Calendar size={16} />
               </div>
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
                 Apply For A Slot
               </Button>
 
-              <p className="text-center text-xs text-gray-600 mt-4 wrap-break-word min-w-0">
+              <p className="text-center text-xs text-neutral-600 mt-4 wrap-break-word min-w-0">
                 By clicking "Apply", you agree to our terms. We reply within 24
                 hours.
               </p>
@@ -174,7 +174,7 @@ const Contact: React.FC = () => {
                 Application Received
               </h3>
               <p
-                className="text-gray-400 wrap-break-word min-w-0"
+                className="text-neutral-400 wrap-break-word min-w-0"
                 style={{ fontSize: "var(--text-body)" }}
               >
                 I'll review your details and get back to you within 24 hours if

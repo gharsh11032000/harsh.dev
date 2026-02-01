@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
     primary:
       "bg-yellow-500 text-black hover:bg-yellow-400 shadow-lg hover:shadow-xl hover:-translate-y-1",
     secondary:
-      "bg-white text-black hover:bg-gray-200 shadow-lg hover:shadow-xl hover:-translate-y-1",
+      "bg-white text-black hover:bg-neutral-200 shadow-lg hover:shadow-xl hover:-translate-y-1",
     outline:
       "glass-button text-yellow-500 shadow-[0_0_15px_rgba(234,179,8,0.1)] hover:shadow-[0_0_25px_rgba(234,179,8,0.2)] hover:-translate-y-1",
   };
