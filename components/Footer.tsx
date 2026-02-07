@@ -1,52 +1,66 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, TrendingUp, Twitter } from "lucide-react";
 import React from "react";
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-black border-t border-neutral-800 text-center overflow-hidden">
+    <footer className="bg-black border-t border-neutral-800 overflow-hidden">
       <div
         className="container flex flex-col items-center min-w-0 w-full"
-        style={{ paddingBlock: "var(--section-padding-block)" }}
+        style={{ paddingBlock: "clamp(2rem, 6vw, 4rem)" }}
       >
-        <h2
-          className="font-bold text-white  mb-5 sm:mb-6 tracking-tighter wrap-break-word"
-          style={{ fontSize: "var(--text-card-title)" }}
-        >
-          harsh<span className="text-yellow-500">.</span>xyz
-        </h2>
+        {/* Logo */}
+        <div className="flex items-center gap-3 mb-6 sm:mb-8">
+          <TrendingUp className="text-yellow-500 stroke-2" size={32} />
+          <span className="text-base md:text-2xl font-bold tracking-tight text-white">
+            Harsh
+          </span>
+        </div>
 
-        <div className="flex gap-5 sm:gap-6 mb-6 sm:mb-8 flex-wrap justify-center">
+        {/* Social Icons */}
+        <div className="flex gap-3 sm:gap-4 mb-6 sm:mb-8">
           <a
-            href="#"
-            className="text-neutral-500 hover:text-yellow-500 transition-colors p-1"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1"
             aria-label="Twitter"
           >
-            <Twitter size={22} fill="currentColor" strokeWidth={0} />
+            <Twitter size={18} fill="currentColor" strokeWidth={0} />
           </a>
           <a
-            href="#"
-            className="text-neutral-500 hover:text-yellow-500 transition-colors p-1"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1"
             aria-label="LinkedIn"
           >
-            <Linkedin size={22} fill="currentColor" strokeWidth={0} />
+            <Linkedin size={18} fill="currentColor" strokeWidth={0} />
           </a>
           <a
-            href="#"
-            className="text-neutral-500 hover:text-yellow-500 transition-colors p-1"
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1"
             aria-label="GitHub"
           >
-            <Github size={22} fill="currentColor" strokeWidth={0} />
+            <Github size={18} fill="currentColor" strokeWidth={0} />
           </a>
         </div>
 
+        {/* Divider */}
+        <div className="w-16 h-0.5 bg-neutral-800 rounded-full mb-6 sm:mb-8" />
 
-
-        <p className="text-neutral-600 wrap-break-word min-w-0 max-w-[min(32rem,100%)]" style={{ fontSize: "var(--text-body)" }}>
-          © {new Date().getFullYear()} Harsh Gupta. All rights reserved.
-          <br className="sm:hidden" />
-          <span className="hidden sm:inline"> </span>
-          Building Assets. Creating Freedom.
-        </p>
+        {/* Copyright & Tagline */}
+        <div className="text-center space-y-2">
+          <p className="text-neutral-500 text-sm font-medium">
+            Building Assets. Creating Freedom.
+          </p>
+          <p className="text-neutral-600 text-xs sm:text-sm">
+            © {currentYear} Harsh Gupta. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

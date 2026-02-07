@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
                 <IconMailFilled size={16} />
               </div>
               <span className="font-medium wrap-break-word min-w-0">
-                harsh@harsh.xyz
+                harsh@harshgupta.xyz
               </span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
