@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative sm:min-h-screen flex items-center bg-[#050505] overflow-hidden selection:bg-yellow-500 selection:text-black pt-24 pb-7 sm:pt-16 sm:pb-6 lg:pt-[clamp(5rem,10vw,7.5rem)] lg:pb-[clamp(2rem,5vw,4rem)]">
+    <div className="relative flex items-center bg-[#050505] overflow-hidden selection:bg-yellow-500 selection:text-black pt-24 pb-7 sm:pt-16 sm:pb-6 lg:pt-[clamp(5rem,10vw,7.5rem)] lg:pb-[clamp(2rem,5vw,4rem)]">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]" />
 
       <div className="absolute top-0 left-0 right-0 h-[500px] bg-linear-to-b from-yellow-500/10 to-transparent blur-[100px] pointer-events-none" />
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 container w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-8 items-center min-w-0">
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-yellow-500/50 rounded-full blur-[100px] -z-10 animate-pulse" />
         <div
-          className="flex flex-col justify-center glass rounded-xl sm:rounded-2xl min-w-0 w-full max-w-full"
+          className="flex flex-col h-full  glass rounded-xl sm:rounded-2xl min-w-0 w-full max-w-full"
           style={{ padding: "clamp(1.25rem, 4vw, 3rem)" }}
         >
           <div className="inline-flex items-center gap-2 self-start bg-red-500/20 border border-red-500/50 text-red-400 font-bold px-3 sm:px-4 py-2 rounded-full mb-5 sm:mb-8 text-[11px] sm:text-xs uppercase tracking-widest shadow-lg backdrop-blur-md animate-pulse">
@@ -70,20 +70,20 @@ const Hero: React.FC = () => {
             </Button>
           </div>
 
-          <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-3 sm:gap-6 lg:gap-8 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider min-w-0">
-            <div className="flex flex-col text-center sm:text-left">
+          <div className="flex mt-12 lg:mt-auto justify-evenly items-center text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider min-w-0">
+            <div className="flex flex-col items-start flex-1">
               <span className="text-white font-bold text-lg sm:text-xl">
                 47+
               </span>
               <span>Projects</span>
             </div>
-            <div className="flex flex-col text-center sm:text-left border-x border-white/10 px-2 sm:px-4">
+            <div className="flex flex-col items-start flex-1">
               <span className="text-white font-bold text-lg sm:text-xl">
                 100%
               </span>
               <span>On-Time</span>
             </div>
-            <div className="flex flex-col text-center sm:text-left">
+            <div className="flex flex-col items-start flex-1">
               <span className="text-white font-bold text-lg sm:text-xl">
                 $2.4M+
               </span>
@@ -96,18 +96,18 @@ const Hero: React.FC = () => {
         <div className="relative hidden lg:block h-full min-w-0">
           <div className="relative z-10 rounded-xl sm:rounded-2xl h-full overflow-hidden border border-neutral-800 bg-neutral-900 min-w-0">
             <Image
-              src="https://picsum.photos/600/700?grayscale"
+              src="/hero-img.png"
               alt="Harsh - Revenue-Focused Developer"
-              className="w-full h-auto object-cover opacity-80 hover:opacity-100 transition-all duration-700 hover:scale-105 min-w-0"
-              width={600}
-              height={700}
+              className="w-full h-[760px] grayscale object-cover opacity-80 hover:opacity-100 transition-all duration-700 hover:scale-105 min-w-0"
+              width={760}
+              height={760}
             />
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80 pointer-events-none" />
 
             {/* Floating Card */}
             <div
-              className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 glass-heavy rounded-lg sm:rounded-xl shadow-2xl min-w-0"
+              className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg sm:rounded-xl shadow-2xl min-w-0"
               style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}
             >
               <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3 min-w-0">
