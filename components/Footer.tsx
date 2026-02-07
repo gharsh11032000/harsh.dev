@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1 touch-target"
+            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 sm:hover:text-yellow-500 sm:hover:border-yellow-500/50 transition-all sm:hover:-translate-y-1 touch-target"
             aria-label="Twitter"
           >
             <Twitter size={18} fill="currentColor" strokeWidth={0} />
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1 touch-target"
+            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 sm:hover:text-yellow-500 sm:hover:border-yellow-500/50 transition-all sm:hover:-translate-y-1 touch-target"
             aria-label="LinkedIn"
           >
             <Linkedin size={18} fill="currentColor" strokeWidth={0} />
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1 touch-target"
+            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 sm:hover:text-yellow-500 sm:hover:border-yellow-500/50 transition-all sm:hover:-translate-y-1 touch-target"
             aria-label="GitHub"
           >
             <Github size={18} fill="currentColor" strokeWidth={0} />

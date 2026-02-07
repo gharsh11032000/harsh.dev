@@ -86,7 +86,7 @@ const LeadMagnet: React.FC = () => {
                   </div>
                 ))}
               </div>
-              <div className="mt-4 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
+              <div className="mt-4 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-md">
                 <p className="text-yellow-500 font-bold text-sm text-center">
                   Total Value: $5,000+ → Yours FREE (for now)
                 </p>

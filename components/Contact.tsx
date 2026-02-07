@@ -1,45 +1,7 @@
-import { CheckCircle } from "lucide-react";
+import { Calendar, CheckCircle, Mail, MapPin } from "lucide-react";
 import React, { useState } from "react";
 import Button from "./Button";
 import Section from "./Section";
-
-/* Filled icons for contact info (Lucide is stroke-based) */
-const IconMailFilled = ({ size = 16 }: { size?: number }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className="shrink-0"
-    aria-hidden
-  >
-    <path d="M2 6l10 7 10-7v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z" />
-  </svg>
-);
-const IconMapPinFilled = ({ size = 16 }: { size?: number }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className="shrink-0"
-    aria-hidden
-  >
-    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
-  </svg>
-);
-const IconCalendarFilled = ({ size = 16 }: { size?: number }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className="shrink-0"
-    aria-hidden
-  >
-    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
-  </svg>
-);
 
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -119,7 +81,7 @@ const Contact: React.FC = () => {
           >
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-7 h-7 sm:w-8 sm:h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <IconMailFilled size={14} />
+                <Mail size={14} className="shrink-0" />
               </div>
               <span className="font-medium wrap-break-word min-w-0">
                 harsh@harshgupta.xyz
@@ -127,7 +89,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-7 h-7 sm:w-8 sm:h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <IconMapPinFilled size={14} />
+                <MapPin size={14} className="shrink-0" />
               </div>
               <span className="font-medium wrap-break-word min-w-0">
                 Remote / Global
@@ -135,7 +97,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-7 h-7 sm:w-8 sm:h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <IconCalendarFilled size={14} />
+                <Calendar size={14} className="shrink-0" />
               </div>
               <span className="min-w-0 wrap-break-word">
                 Availability:{" "}
@@ -160,7 +122,7 @@ const Contact: React.FC = () => {
                     required
                     type="text"
                     className={`${inputClass} p-3 sm:p-4`}
-                    placeholder="John Doe"
+                    placeholder="Enter your full name"
                   />
                 </div>
                 <div className="min-w-0">
@@ -169,7 +131,7 @@ const Contact: React.FC = () => {
                     required
                     type="email"
                     className={`${inputClass} p-3 sm:p-4`}
-                    placeholder="john@company.com"
+                    placeholder="Enter your work email"
                   />
                 </div>
               </div>
