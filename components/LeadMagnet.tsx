@@ -33,44 +33,63 @@ const LeadMagnet: React.FC = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-16 items-stretch lg:items-center min-w-0 w-full">
             {/* Copy */}
             <div className="min-w-0 flex flex-col">
-              <div className="inline-flex items-center gap-1 bg-yellow-500  text-black font-bold px-3 py-2 rounded-full text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit">
+              <div className="inline-flex items-center gap-1 bg-yellow-500 text-black font-bold px-3 py-2 rounded-full text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit animate-pulse">
                 <ShieldCheck size={16} className="shrink-0" />
-                Top Secret Access
+                Free For Limited Time
               </div>
               <h2
                 className="font-bold uppercase mb-4 sm:mb-6 leading-[0.95] tracking-tighter text-balance wrap-break-word"
                 style={{ fontSize: "var(--text-section-title)" }}
               >
-                Steal My <span className="text-yellow-500">7-Figure</span> App
-                Blueprint
+                Steal The <span className="text-yellow-500">$47K</span> Tech
+                Stack Blueprint
               </h2>
               <p
                 className="text-neutral-400 mb-6 sm:mb-8 font-medium min-w-0"
                 style={{ fontSize: "var(--text-body)" }}
               >
-                I've compiled the exact libraries, databases, and frameworks
-                used by unicorns to scale. This isn't theory. It's the cheat
-                sheet I use for every $10k+ project.
+                This is the exact tech stack I used to build apps generating{" "}
+                <span className="text-white font-semibold">
+                  $2.4M+ in revenue
+                </span>
+                . Not theory. Not fluff. The actual libraries, databases, and
+                frameworks I deploy on every high-ticket project.
               </p>
               <div className="space-y-3 sm:space-y-4 min-w-0">
                 {[
-                  "Frontend Architecture Diagram",
-                  "Top 5 Performance Killers Checklist",
-                  "The 'Clean Code' SOP",
-                ].map((item, idx) => (
+                  {
+                    item: "The $47K React Architecture (copy-paste ready)",
+                    value: "$2,500",
+                  },
+                  {
+                    item: "Performance Optimization Checklist (21 points)",
+                    value: "$1,500",
+                  },
+                  { item: "My Personal Code Quality SOP", value: "$1,000" },
+                ].map((content, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-3 sm:gap-4 bg-neutral-900/50 p-3 sm:p-4 rounded-md border border-neutral-800 min-w-0"
+                    className="flex items-center justify-between gap-3 sm:gap-4 bg-neutral-900/50 p-3 sm:p-4 rounded-md border border-neutral-800 min-w-0"
                   >
-                    <CheckCircle
-                      className="text-black bg-yellow-500 rounded-full shrink-0"
-                      size={24}
-                    />
-                    <span className="font-bold text-sm sm:text-base wrap-break-word min-w-0">
-                      {item}
+                    <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                      <CheckCircle
+                        className="text-black bg-yellow-500 rounded-full shrink-0"
+                        size={24}
+                      />
+                      <span className="font-bold text-sm sm:text-base wrap-break-word min-w-0">
+                        {content.item}
+                      </span>
+                    </div>
+                    <span className="text-yellow-500 font-bold text-sm whitespace-nowrap shrink-0">
+                      {content.value} Value
                     </span>
                   </div>
                 ))}
+              </div>
+              <div className="mt-4 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
+                <p className="text-yellow-500 font-bold text-sm text-center">
+                  Total Value: $5,000+ → Yours FREE (for now)
+                </p>
               </div>
             </div>
 
@@ -82,7 +101,10 @@ const LeadMagnet: React.FC = () => {
               }}
             >
               {!submitted ? (
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 w-full min-w-0 max-w-full">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-4 sm:space-y-5 w-full min-w-0 max-w-full"
+                >
                   <div className="text-center mb-8 flex flex-col items-center gap-2">
                     <h3 className="font-bold text-xl sm:text-2xl text-white uppercase tracking-tight">
                       Get Instant Access
@@ -126,7 +148,8 @@ const LeadMagnet: React.FC = () => {
                     className="mt-4 flex items-center justify-center gap-2 py-3 px-6 sm:py-4 sm:px-8"
                     style={{ fontSize: "var(--text-body)" }}
                   >
-                    Send Me The Blueprint <Download size={18} className="shrink-0" />
+                    Send Me The Blueprint{" "}
+                    <Download size={18} className="shrink-0" />
                   </Button>
 
                   <div className="flex items-center justify-center gap-2 text-[10px] text-neutral-600 mt-4 uppercase font-bold tracking-wider">

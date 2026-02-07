@@ -5,17 +5,38 @@ import Section from "./Section";
 
 /* Filled icons for contact info (Lucide is stroke-based) */
 const IconMailFilled = ({ size = 16 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="shrink-0" aria-hidden>
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="shrink-0"
+    aria-hidden
+  >
     <path d="M2 6l10 7 10-7v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z" />
   </svg>
 );
 const IconMapPinFilled = ({ size = 16 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="shrink-0" aria-hidden>
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="shrink-0"
+    aria-hidden
+  >
     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
   </svg>
 );
 const IconCalendarFilled = ({ size = 16 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="shrink-0" aria-hidden>
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="shrink-0"
+    aria-hidden
+  >
     <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
   </svg>
 );
@@ -38,8 +59,8 @@ const Contact: React.FC = () => {
   return (
     <Section
       id="contact"
-      title="Ready to Scale?"
-      subtitle="I only take on 2 new clients per month. Apply below."
+      title="Let's Print Money Together"
+      subtitle="I only take on 2 projects per month. If you're serious about ROI, apply below."
       darker
     >
       <div
@@ -58,14 +79,17 @@ const Contact: React.FC = () => {
 
             {[
               {
-                title: "Discovery Call",
-                desc: "We talk for 15 minutes. If I can't help you make money, I'll tell you.",
+                title: "15-Min Discovery Call",
+                desc: "I qualify you. You qualify me. If there's no fit, I'll tell you who can help.",
               },
               {
-                title: "The Strategy",
-                desc: "I map out the architecture and the roadmap to ROI.",
+                title: "Revenue Roadmap",
+                desc: "I map out exactly how your app will generate ROI—before writing a single line of code.",
               },
-              { title: "Execution", desc: "I build. You launch. We scale." },
+              {
+                title: "Build & Launch",
+                desc: "I build fast. You launch faster. Revenue starts flowing.",
+              },
             ].map((step, i) => (
               <div key={i} className="relative flex gap-4 sm:gap-6 min-w-0">
                 <div className="shrink-0 w-10 h-10 rounded-full bg-neutral-950 border-2 border-yellow-500 text-yellow-500 font-bold flex items-center justify-center z-10 text-sm">
@@ -97,22 +121,26 @@ const Contact: React.FC = () => {
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
                 <IconMailFilled size={16} />
               </div>
-              <span className="font-medium wrap-break-word min-w-0">HARSH@example.com</span>
+              <span className="font-medium wrap-break-word min-w-0">
+                harsh@harsh.xyz
+              </span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
                 <IconMapPinFilled size={16} />
               </div>
-              <span className="font-medium wrap-break-word min-w-0">Remote / Global</span>
+              <span className="font-medium wrap-break-word min-w-0">
+                Remote / Global
+              </span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
               <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
                 <IconCalendarFilled size={16} />
               </div>
               <span className="min-w-0 wrap-break-word">
-                Next Slot:{" "}
-                <span className="font-semibold bg-yellow-500/20 px-3 leading-none py-1 rounded-lg text-yellow-500 text-sm">
-                  November 1st
+                Availability:{" "}
+                <span className="font-semibold bg-red-500/20 px-3 leading-none py-1 rounded-lg text-red-400 text-sm">
+                  2 Spots Left
                 </span>
               </span>
             </div>
@@ -121,7 +149,10 @@ const Contact: React.FC = () => {
 
         <div className="min-w-0">
           {!submitted ? (
-            <form className="space-y-4 sm:space-y-5 min-w-0 w-full" onSubmit={handleSubmit}>
+            <form
+              className="space-y-4 sm:space-y-5 min-w-0 w-full"
+              onSubmit={handleSubmit}
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 min-w-0">
                 <div className="min-w-0">
                   <label className={labelClass}>Full Name</label>
@@ -145,10 +176,7 @@ const Contact: React.FC = () => {
 
               <div className="min-w-0">
                 <label className={labelClass}>Budget Range</label>
-                <select
-                  required
-                  className={`${inputClass} p-3 sm:p-4`}
-                >
+                <select required className={`${inputClass} p-3 sm:p-4`}>
                   <option value="">Select Investment Level</option>
                   <option value="1-3k">$1,000 - $3,000</option>
                   <option value="3-5k">$3,000 - $5,000</option>
@@ -167,8 +195,11 @@ const Contact: React.FC = () => {
                 />
               </div>
 
-              <Button className="w-full min-w-0" style={{ fontSize: "var(--text-body)" }}>
-                Apply For A Slot
+              <Button
+                className="w-full min-w-0"
+                style={{ fontSize: "var(--text-body)" }}
+              >
+                Claim Your Spot Now
               </Button>
 
               <p className="text-center text-xs text-neutral-600 mt-4 wrap-break-word min-w-0">
