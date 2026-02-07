@@ -47,7 +47,7 @@ const Portfolio: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 xl:gap-12 items-stretch lg:items-center w-[85vw] min-w-[280px] lg:w-full shrink-0 snap-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+              className={`flex flex-col lg:flex-row gap-5 sm:gap-8 lg:gap-10 xl:gap-12 items-stretch lg:items-center w-[80vw] min-w-[280px] max-w-[340px] lg:max-w-none lg:w-full shrink-0 snap-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
             >
               {/* Image Side */}
               <div className="w-full min-w-0 lg:min-w-0 lg:flex-[1.2] group relative">
@@ -63,8 +63,8 @@ const Portfolio: React.FC = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0 min-w-0"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3 sm:gap-4">
-                    <button className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black font-bold uppercase tracking-wider rounded-full hover:bg-yellow-500 transition-colors text-sm sm:text-base">
-                      View Live <ExternalLink size={18} />
+                    <button className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black font-bold uppercase tracking-wider rounded-full hover:bg-yellow-500 transition-colors text-xs sm:text-sm touch-target">
+                      View Live <ExternalLink size={16} />
                     </button>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "font-bold uppercase tracking-wider py-4 px-8 rounded-full transition-all duration-300 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500 cursor-pointer whitespace-nowrap";
+    "font-bold uppercase tracking-wider py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500 cursor-pointer whitespace-nowrap touch-target text-sm sm:text-base";
 
   const variants = {
     primary:

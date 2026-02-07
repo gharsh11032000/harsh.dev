@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
       darker
     >
       <div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 glass border border-white/10 rounded-xl sm:rounded-2xl min-w-0 w-full overflow-hidden"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-12 xl:gap-16 glass border border-white/10 rounded-xl sm:rounded-2xl min-w-0 w-full overflow-hidden"
         style={{ padding: "clamp(1.25rem, 4vw, 4rem)" }}
       >
         <div className="min-w-0">
@@ -91,8 +91,8 @@ const Contact: React.FC = () => {
                 desc: "I build fast. You launch faster. Revenue starts flowing.",
               },
             ].map((step, i) => (
-              <div key={i} className="relative flex gap-4 sm:gap-6 min-w-0">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-neutral-950 border-2 border-yellow-500 text-yellow-500 font-bold flex items-center justify-center z-10 text-sm">
+              <div key={i} className="relative flex gap-3 sm:gap-6 min-w-0">
+                <div className="shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-neutral-950 border-2 border-yellow-500 text-yellow-500 font-bold flex items-center justify-center z-10 text-xs sm:text-sm">
                   {i + 1}
                 </div>
                 <div className="min-w-0">
@@ -118,24 +118,24 @@ const Contact: React.FC = () => {
             style={{ padding: "clamp(1rem, 2vw, 1.5rem)" }}
           >
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
-              <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <IconMailFilled size={16} />
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
+                <IconMailFilled size={14} />
               </div>
               <span className="font-medium wrap-break-word min-w-0">
                 harsh@harshgupta.xyz
               </span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
-              <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <IconMapPinFilled size={16} />
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
+                <IconMapPinFilled size={14} />
               </div>
               <span className="font-medium wrap-break-word min-w-0">
                 Remote / Global
               </span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-neutral-300 min-w-0">
-              <div className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
-                <IconCalendarFilled size={16} />
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-neutral-800 rounded-lg flex items-center justify-center text-yellow-500 shrink-0">
+                <IconCalendarFilled size={14} />
               </div>
               <span className="min-w-0 wrap-break-word">
                 Availability:{" "}

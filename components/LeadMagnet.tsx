@@ -33,9 +33,9 @@ const LeadMagnet: React.FC = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-16 items-stretch lg:items-center min-w-0 w-full">
             {/* Copy */}
             <div className="min-w-0 flex flex-col">
-              <div className="inline-flex items-center gap-1 bg-yellow-500 text-black font-bold px-3 py-2 rounded-full text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit animate-pulse">
-                <ShieldCheck size={16} className="shrink-0" />
-                Free For Limited Time
+              <div className="inline-flex items-center gap-1.5 bg-yellow-500 text-black font-bold px-3 py-2 rounded-full text-[11px] sm:text-xs uppercase mb-4 sm:mb-6 tracking-widest w-fit animate-pulse">
+                <ShieldCheck size={14} className="shrink-0" />
+                <span>Free For Limited Time</span>
               </div>
               <h2
                 className="font-bold uppercase mb-4 sm:mb-6 leading-[0.95] tracking-tighter text-balance wrap-break-word"
@@ -71,12 +71,12 @@ const LeadMagnet: React.FC = () => {
                     key={idx}
                     className="flex items-center justify-between gap-3 sm:gap-4 bg-neutral-900/50 p-3 sm:p-4 rounded-md border border-neutral-800 min-w-0"
                   >
-                    <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                    <div className="flex items-center gap-2 sm:gap-4 min-w-0">
                       <CheckCircle
                         className="text-black bg-yellow-500 rounded-full shrink-0"
-                        size={24}
+                        size={20}
                       />
-                      <span className="font-bold text-sm sm:text-base wrap-break-word min-w-0">
+                      <span className="font-bold text-xs sm:text-sm wrap-break-word min-w-0">
                         {content.item}
                       </span>
                     </div>
@@ -145,10 +145,9 @@ const LeadMagnet: React.FC = () => {
                   <Button
                     type="submit"
                     fullWidth
-                    className="mt-4 flex items-center justify-center gap-2 py-3 px-6 sm:py-4 sm:px-8"
-                    style={{ fontSize: "var(--text-body)" }}
+                    className="mt-4 flex items-center justify-center gap-2"
                   >
-                    Send Me The Blueprint{" "}
+                    Send Me The Blueprint
                     <Download size={18} className="shrink-0" />
                   </Button>
 

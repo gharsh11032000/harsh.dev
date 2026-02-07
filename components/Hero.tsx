@@ -26,9 +26,9 @@ const Hero: React.FC = () => {
           className="flex flex-col justify-center glass rounded-xl sm:rounded-2xl min-w-0 w-full max-w-full"
           style={{ padding: "clamp(1.25rem, 4vw, 3rem)" }}
         >
-          <div className="inline-flex items-center gap-2 self-start bg-red-500/20 border border-red-500/50 text-red-400 font-bold px-4 py-2 rounded-full mb-6 sm:mb-8 text-xs uppercase tracking-widest shadow-lg backdrop-blur-md animate-pulse">
-            <span className="w-2 h-2 rounded-full bg-red-500" />
-            Only 2 Spots Left This Month
+          <div className="inline-flex items-center gap-2 self-start bg-red-500/20 border border-red-500/50 text-red-400 font-bold px-3 sm:px-4 py-2 rounded-full mb-5 sm:mb-8 text-[11px] sm:text-xs uppercase tracking-widest shadow-lg backdrop-blur-md animate-pulse">
+            <span className="w-2 h-2 rounded-full bg-red-500 shrink-0" />
+            <span>Only 2 Spots Left</span>
           </div>
 
           <h1
@@ -54,50 +54,37 @@ const Hero: React.FC = () => {
             additional revenue through high-performance apps.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Button
               onClick={scrollToContact}
-              className="flex items-center justify-center gap-2 px-5!"
-              style={{ fontSize: "var(--text-body)" }}
+              className="flex items-center justify-center gap-2"
             >
-              Claim Your Spot <ChevronRight size={24} />
+              Claim Your Spot <ChevronRight size={20} className="shrink-0" />
             </Button>
             <Button
               variant="outline"
               onClick={scrollToPortfolio}
-              className="flex items-center justify-center gap-2 px-5!"
-              style={{ fontSize: "var(--text-body)" }}
+              className="flex items-center justify-center gap-2"
             >
-              See The Proof <Download size={24} />
+              See The Proof <Download size={20} className="shrink-0" />
             </Button>
           </div>
 
-          <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 text-sm font-semibold text-neutral-400 uppercase tracking-wider min-w-0">
-            <div className="flex flex-col">
-              <span
-                className="text-white font-bold"
-                style={{ fontSize: "var(--text-body)" }}
-              >
+          <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-3 sm:gap-6 lg:gap-8 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider min-w-0">
+            <div className="flex flex-col text-center sm:text-left">
+              <span className="text-white font-bold text-lg sm:text-xl">
                 47+
               </span>
               <span>Projects</span>
             </div>
-            <div className="block w-px h-10 bg-white/10 shrink-0" />
-            <div className="flex flex-col">
-              <span
-                className="text-white font-bold"
-                style={{ fontSize: "var(--text-body)" }}
-              >
+            <div className="flex flex-col text-center sm:text-left border-x border-white/10 px-2 sm:px-4">
+              <span className="text-white font-bold text-lg sm:text-xl">
                 100%
               </span>
               <span>On-Time</span>
             </div>
-            <div className="block w-px h-10 bg-white/10 shrink-0" />
-            <div className="flex flex-col">
-              <span
-                className="text-white font-bold"
-                style={{ fontSize: "var(--text-body)" }}
-              >
+            <div className="flex flex-col text-center sm:text-left">
+              <span className="text-white font-bold text-lg sm:text-xl">
                 $2.4M+
               </span>
               <span>Generated</span>

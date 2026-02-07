@@ -11,20 +11,20 @@ const Footer: React.FC = () => {
         style={{ paddingBlock: "clamp(2rem, 6vw, 4rem)" }}
       >
         {/* Logo */}
-        <div className="flex items-center gap-3 mb-6 sm:mb-8">
-          <TrendingUp className="text-yellow-500 stroke-2" size={32} />
-          <span className="text-base md:text-2xl font-bold tracking-tight text-white">
+        <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
+          <TrendingUp className="text-yellow-500 stroke-2" size={28} />
+          <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-white">
             Harsh
           </span>
         </div>
 
         {/* Social Icons */}
-        <div className="flex gap-3 sm:gap-4 mb-6 sm:mb-8">
+        <div className="flex gap-3 mb-6 sm:mb-8">
           <a
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1"
+            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1 touch-target"
             aria-label="Twitter"
           >
             <Twitter size={18} fill="currentColor" strokeWidth={0} />
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1"
+            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1 touch-target"
             aria-label="LinkedIn"
           >
             <Linkedin size={18} fill="currentColor" strokeWidth={0} />
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1"
+            className="w-11 h-11 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400 hover:text-yellow-500 hover:border-yellow-500/50 transition-all hover:-translate-y-1 touch-target"
             aria-label="GitHub"
           >
             <Github size={18} fill="currentColor" strokeWidth={0} />

@@ -46,13 +46,13 @@ const Testimonials: React.FC = () => {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="glass rounded-lg border border-white/10 relative flex flex-col hover:border-white/20 transition-colors w-[85vw] min-w-[280px] sm:w-auto sm:min-w-0 shrink-0 snap-center"
+              className="glass rounded-xl border border-white/10 relative flex flex-col hover:border-white/20 transition-colors w-[80vw] min-w-[280px] max-w-[320px] sm:w-auto sm:max-w-none sm:min-w-0 shrink-0 snap-center"
               style={{ padding: "clamp(1.25rem, 3vw, 2rem)" }}
             >
               {/* Stars */}
-              <div className="flex gap-1 text-yellow-500 mb-4 sm:mb-6 shrink-0">
+              <div className="flex gap-0.5 text-yellow-500 mb-4 sm:mb-6 shrink-0">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} size={16} fill="currentColor" />
+                  <Star key={i} size={14} fill="currentColor" strokeWidth={0} />
                 ))}
               </div>
 
